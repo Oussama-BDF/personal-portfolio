@@ -1,0 +1,21 @@
+:root {
+    // Dark Colors
+    --background-body: #{$background-body-dark};
+    --background-primary: #{$background-primary-dark};
+    --background-secondary: #{$background-secondary-dark};
+    --background-tertiary: #{$background-tertiary-dark};
+    --accent-color: #{$accent-color-dark};
+    --text-primary: #{$text-primary-dark};
+    --text-secondary: #{$text-secondary-dark};
+}
+
+[data-theme="light"] {
+    // Light Colors
+    --background-body: #{$background-body-light};
+    --background-primary: #{$background-primary-light};
+    --background-secondary: #{$background-secondary-light};
+    --background-tertiary: #{$background-tertiary-light};
+    --accent-color: #{$accent-color-light};
+    --text-primary: #{$text-primary-light};
+    --text-secondary: #{$text-secondary-light};
+}

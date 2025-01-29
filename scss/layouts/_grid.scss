@@ -1,0 +1,62 @@
+// Container and Grid system Styles
+.container {
+    margin: 0 auto;
+    padding-inline: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    --gap: 20px;
+    gap: var(--gap);
+}
+
+.col-2,
+.col-3, 
+.col-4 {
+    // Default to 1 item per row (mobile first)
+    flex: 100%;
+}
+
+@include media-query($xsmall-screen) {
+    // xsmall devices, mobiles
+    .container {
+        max-width: 550px;
+    }
+}
+
+@include media-query($small-screen) {
+    // small devices, tablets 
+    .container {
+        max-width: 750px;
+    }
+
+    .col-2,
+    .col-3, 
+    .col-4 {
+        flex: 0 1 calc(50% - var(--gap) / 2);
+    }
+}
+
+@include media-query($medium-screen) {
+    // medium devices, desktops 
+    .container {
+        max-width: 810px;
+    }
+
+    .col-3,
+    .col-4 {
+        flex: 0 1 calc(33.33% - var(--gap) * 2/3);
+    }
+}
+
+@include media-query($large-screen) {
+    // large devices, wide screens 
+    .container {
+        max-width: 1075px;
+    }
+
+    .col-4 {
+        flex: 0 1 calc(25% - var(--gap) * 3/4);
+    }
+}

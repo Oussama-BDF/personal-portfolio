@@ -1,0 +1,16 @@
+// Media queries mixin
+@mixin media-query($min-breakpoint: null, $max-breakpoint: null) {
+    @if $min-breakpoint and $max-breakpoint {
+        @media (min-width: $min-breakpoint) and (max-width: $max-breakpoint) {
+            @content;
+        }
+    } @else if $min-breakpoint {
+        @media (min-width: $min-breakpoint) {
+            @content;
+        }
+    } @else if $max-breakpoint {
+        @media (max-width: $max-breakpoint) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+// Dark Colors
+$background-primary-dark: #1e1e1f;
+$background-body-dark: darken($background-primary-dark, 5%);
+$background-secondary-dark: lighten($background-primary-dark, 1.5%);
+$background-tertiary-dark: lighten($background-primary-dark, 5%);
+$accent-color-dark: #8D4AE9;
+$text-primary-dark: #d6d6d6;
+$text-secondary-dark: #fff;
+
+// Light Colors
+$background-primary-light: #ffffff;
+$background-body-light: darken($background-primary-light, 5%);
+$background-secondary-light: lighten($background-primary-light, 3%);
+$background-tertiary-light: lighten($background-primary-light, 6%);
+$accent-color-light: #a978ed;
+$text-primary-light: #333333;
+$text-secondary-light: #000;
+
+// Breakpoints
+$xxsmall-screen: 579px;
+$xsmall-screen: 580px;
+$small-screen: 768px;
+$medium-screen: 992px;
+$large-screen: 1200px;
