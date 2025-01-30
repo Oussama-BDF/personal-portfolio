@@ -1,0 +1,38 @@
+.topbar {
+
+    .logo,
+    .theme-toggle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        top: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        border: 1px solid var(--border-color);
+        box-shadow: 0 4px 6px -1px #475569, 0 2px 4px -2px #475569;
+        background-color: var(--background-secondary);
+        color: var(--text-primary);
+        font-size: 22px;
+        z-index: 10;
+        cursor: pointer;
+    }
+
+    .logo {
+        left: 35px;
+    }
+
+    .theme-toggle {
+        right: 35px;
+
+        .icon {
+            position: absolute;
+            display: flex;
+            &:not(.active) {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    }
+}
