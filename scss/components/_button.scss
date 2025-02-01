@@ -1,29 +1,28 @@
-.btn-container {
+.btn-group {
     display: inline-flex;
-    width: fit-content;
     gap: 8px;
+    width: max-content;
 }
 
-.btn, .btn-icon {
+.btn {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 8px;
-    width: fit-content;
     height: 40px;
+    width: max-content;
+    padding-inline: 14px;
     border-radius: 20px;
     background: var(--accent-color);
     color: var(--text-primary);
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 500;
-}
 
-.btn {
-    padding-inline: 12px;
-}
-
-.btn-icon {
-    aspect-ratio: 1;
+    &.icon {
+        aspect-ratio: 1;
+        padding: 0;
+        width: 40px;
+    }
 }
 
 .btn-secondary {

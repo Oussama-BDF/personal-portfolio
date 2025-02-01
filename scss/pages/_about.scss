@@ -1,6 +1,10 @@
 // About Section
 section.about {
 
+    .name {
+        color: var(--accent-color);
+    }
+
     .about-text {
         p {
             margin-bottom: 8px;
@@ -9,10 +13,6 @@ section.about {
 
 
     .informations {
-        .info {
-            flex: 100%;
-        }
-
         .name {
             display: inline-block;
             min-width: 100px;

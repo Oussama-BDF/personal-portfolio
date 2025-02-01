@@ -44,3 +44,17 @@ ul {
     background: var(--accent-color);
     color: #000;
 }
+
+// Scroll style
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111112;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #2b2b2c;
+    border-radius: 12px;
+}
