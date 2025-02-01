@@ -1,0 +1,26 @@
+.h1 {
+    margin: 0 auto 18px;
+    font-size: var(--fs-1);
+    font-weight: 500;
+    line-height: 40px;
+    color: var(--text-secondary);
+}
+
+.p {
+    color: var(--text-primary);
+    font-size: var(--fs-2);
+    font-weight: 300;
+    line-height: 20px;
+}
+
+@include media-query($small-screen) {
+    .h1 {
+        line-height: 1;
+    }
+}
+
+@include media-query($medium-screen) {
+    .p {
+        line-height: 24px;
+    }
+}

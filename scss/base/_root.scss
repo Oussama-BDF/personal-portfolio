@@ -8,6 +8,11 @@
     --text-primary: #{$text-primary-dark};
     --text-secondary: #{$text-secondary-dark};
     --border-color: #{$border-color-dark};
+    --shadow-color: #{$shadow-color-dark};
+
+    // Fonts sizes
+    --fs-1: 36px;
+    --fs-2: 14px;
 }
 
 [data-theme="light"] {
@@ -20,4 +25,20 @@
     --text-primary: #{$text-primary-light};
     --text-secondary: #{$text-secondary-light};
     --border-color: #{$border-color-light};
+    --shadow-color: #{$shadow-color-light};
+}
+
+
+// ?Responsive
+@include media-query($small-screen) {
+    :root {
+        --fs-1: 45px;
+    }
+}
+
+@include media-query($medium-screen) {
+    :root {
+        --fs-1: 55px;
+        --fs-2: 15px;
+    }
 }

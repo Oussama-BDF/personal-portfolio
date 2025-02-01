@@ -1,0 +1,26 @@
+.btn-container {
+    display: inline-flex;
+    width: fit-content;
+    gap: 8px;
+}
+
+.btn, .btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    height: 40px;
+    border-radius: 20px;
+    background: var(--accent-color);
+    color: var(--text-primary);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.btn {
+    padding-inline: 12px;
+}
+
+.btn-icon {
+    aspect-ratio: 1;
+}

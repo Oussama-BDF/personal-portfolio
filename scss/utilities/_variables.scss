@@ -7,6 +7,7 @@ $accent-color-dark: #8D4AE9;
 $text-primary-dark: #d6d6d6;
 $text-secondary-dark: #fff;
 $border-color-dark: lighten($background-primary-dark, 10%);
+$shadow-color-dark: #ffffff4d;
 
 // Light Colors
 $background-primary-light: #ffffff;
@@ -17,6 +18,7 @@ $accent-color-light: #a978ed;
 $text-primary-light: #333333;
 $text-secondary-light: #000;
 $border-color-light: darken($background-primary-light, 10%);
+$shadow-color-light: #0000009e;
 
 // Breakpoints
 $xxsmall-screen: 579px;
