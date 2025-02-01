@@ -9,6 +9,7 @@
     align-items: center;
     justify-content: center;
     gap: 8px;
+    width: fit-content;
     height: 40px;
     border-radius: 20px;
     background: var(--accent-color);
@@ -23,4 +24,9 @@
 
 .btn-icon {
     aspect-ratio: 1;
+}
+
+.btn-secondary {
+    border: 1px solid var(--border-color);
+    background-color: var(--background-tertiary);
 }

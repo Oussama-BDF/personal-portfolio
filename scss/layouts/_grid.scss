@@ -7,10 +7,11 @@
 .row {
     display: flex;
     flex-wrap: wrap;
-    --gap: 20px;
+    --gap: 17px;
     gap: var(--gap);
 }
 
+.col-1,
 .col-2,
 .col-3, 
 .col-4 {
@@ -42,6 +43,10 @@
     // medium devices, desktops 
     .container {
         max-width: 810px;
+    }
+
+    .row {
+        --gap: 20px;
     }
 
     .col-3,

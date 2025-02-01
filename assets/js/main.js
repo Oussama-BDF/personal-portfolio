@@ -1,8 +1,9 @@
 // !Toggle the active class for navbar links and update the highlighter position
+
 const highlighter = document.querySelector(".highlighter");
 
 /**
- * Updates the highlighter's position and width to match the active navbar link.
+ * Update the highlighter's position and width to match the active navbar link.
  */
 function updateHighlighterPosition(activeLink) {
     highlighter.style.left = `${activeLink.offsetLeft}px`;
@@ -17,13 +18,25 @@ window.addEventListener('load', () => {
 
 document.addEventListener('DOMContentLoaded', () => {
     const links = document.querySelectorAll(".navbar-link");
+
     links.forEach(li => {
         li.addEventListener("click", () => {
+            // Ensure the clicked link is not already active
             if(!li.classList.contains("active")) {
+
+                // Remove the active class from all links and add it to the clicked link
                 links.forEach(li => li.classList.remove("active"));
                 li.classList.add("active");
     
-                updateHighlighterPosition(li)
+                // Update the highlighter position
+                updateHighlighterPosition(li);
+
+                // Hide all articles and display the corresponding one
+                document.querySelectorAll("article").forEach(a => a.classList.remove("active"));
+                const article = document.querySelector(`article[data-page="${li.dataset.navlink}"]`)
+                article.classList.add("active");
+
+                window.scrollTo({ top: 0, behavior: 'smooth' });
             }
         })
     });

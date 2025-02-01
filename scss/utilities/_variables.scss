@@ -6,6 +6,7 @@ $background-tertiary-dark: lighten($background-primary-dark, 5%);
 $accent-color-dark: #8D4AE9;
 $text-primary-dark: #d6d6d6;
 $text-secondary-dark: #fff;
+$text-tertiary-dark: #939393;
 $border-color-dark: lighten($background-primary-dark, 10%);
 $shadow-color-dark: #ffffff4d;
 
@@ -26,3 +27,7 @@ $xsmall-screen: 580px;
 $small-screen: 768px;
 $medium-screen: 992px;
 $large-screen: 1200px;
+
+$brd-gradient: linear-gradient(to bottom right, #{$border-color-dark} 0%, transparent 50%);
+$brd-gradient-hover: linear-gradient(to bottom right, #{$accent-color-dark} 0%, transparent 50%);
+$bg-gradient-hover: linear-gradient(135deg, rgba($accent-color-dark, 0.25) 0%, transparent 59.86%), var(--background-secondary-dark);

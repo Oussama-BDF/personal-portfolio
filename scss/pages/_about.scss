@@ -1,0 +1,59 @@
+// About Section
+section.about {
+
+    .about-text {
+        p {
+            margin-bottom: 8px;
+        }
+    }
+
+
+    .informations {
+        .info {
+            flex: 100%;
+        }
+
+        .name {
+            display: inline-block;
+            min-width: 100px;
+        }
+    }
+}
+
+
+// Skills Section
+.skills {
+    max-width: 768px;
+    margin-inline: auto;
+}
+
+.skill-item {
+    text-align: center;
+    flex: 0 1 calc(33.33% - var(--gap)* 2 / 3);
+
+    .icon-box {
+        font-size: 35px;
+    }
+}
+
+// Education & Experience Section
+.timeline-item {
+    position: relative;
+}
+
+.timeline-title {
+    position: relative;
+
+    span {
+        color: var(--accent-color);
+        font-size: var(--fs-5);
+    }
+}
+
+
+// ?Responsive
+@include media-query(null, $small-screen) {
+    .about-text {
+        order: 2;
+    }
+}
