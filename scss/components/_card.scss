@@ -15,18 +15,4 @@
         background-color: var(--background-secondary);
         z-index: -1;
     }
-
-    .icon-box {
-        color: var(--accent-color);
-        font-size: 35px;
-    }
-}
-
-// ?responsive
-@include media-query($xsmall-screen) {   
-    .card {
-        .icon-box {
-            font-size: 40px;
-        }
-    }
 }

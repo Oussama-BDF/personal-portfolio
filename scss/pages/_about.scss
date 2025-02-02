@@ -1,28 +1,28 @@
-// About Section
-section.about {
-
-    .name {
-        color: var(--accent-color);
-    }
+// ?About Section
+.about-section {
 
     .about-text {
-        p {
-            margin-bottom: 8px;
-        }
+        margin-bottom: 8px;
     }
 
-
-    .informations {
-        .name {
-            display: inline-block;
-            min-width: 100px;
-        }
+    .about-details .detail-label {
+        display: inline-block;
+        min-width: 100px;
+        color: var(--accent-color);
     }
 }
 
+// ?Education & Experience Sections
+.timeline {
+    .timeline-title span {
+        color: var(--accent-color);
+        font-size: var(--fs-5);
+    }
+}
 
-// Skills Section
-.skills {
+// ?Skills Section
+.skills-section {
+    width: 100%;
     max-width: 768px;
     margin-inline: auto;
 }
@@ -32,28 +32,22 @@ section.about {
     flex: 0 1 calc(33.33% - var(--gap)* 2 / 3);
 
     .icon-box {
+        color: var(--accent-color);
         font-size: 35px;
     }
 }
 
-// Education & Experience Section
-.timeline-item {
-    position: relative;
-}
-
-.timeline-title {
-    position: relative;
-
-    span {
-        color: var(--accent-color);
-        font-size: var(--fs-5);
+// ?Responsive
+@include media-query(null, $small-screen) {
+    .about-summary {
+        order: 2;
     }
 }
 
-
-// ?Responsive
-@include media-query(null, $small-screen) {
-    .about-text {
-        order: 2;
+@include media-query($small-screen) {
+    .skill-item {
+        .icon-box {
+            font-size: 40px;
+        }
     }
 }

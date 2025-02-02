@@ -52,16 +52,12 @@ article {
             position: absolute;
             left: 50%;
             bottom: 0;
-            width: 60px;
+            width: 30%;
             height: 3px;
             background: linear-gradient(90deg, #a855f7, #9333ea);
             border-radius: 2px;
             transform: translateX(-50%);
             transition: width 0.3s ease-in-out;
-        }
-
-        &:hover::after {
-            width: 100px;
         }
     }
 
