@@ -1,5 +1,5 @@
 :root {
-    // Dark Colors
+    // ?Dark Colors
     --background-body: #{$background-body-dark};
     --background-primary: #{$background-primary-dark};
     --background-secondary: #{$background-secondary-dark};
@@ -11,27 +11,24 @@
     --border-color: #{$border-color-dark};
     --shadow-color: #{$shadow-color-dark};
 
-    // Shadows
-    --shadow-1: -4px 8px 24px #00000040;
-    --shadow-2: 0 16px 30px #00000040;
+    // ?Shadows
+    --shadow-1: 0 16px 30px #00000040;
 
-    --brd-gradient: #{$brd-gradient};
-    --brd-gradient-hover: #{$brd-gradient-hover};
-    --bg-gradient-hover: #{$bg-gradient-hover};
+    // ?Gradients
+    --brd-gradient: linear-gradient(to bottom right, var(--border-color) 0%, var(--background-secondary) 50%);
 
-    // Fonts sizes
-    --fs-1: 36px;
-    --fs-2: 30px;
-    --fs-3: 27px;
-    --fs-4: 17px;
-    --fs-5: 14px;
-    --fs-6: 13px;
-
-    --fs-8: 27px; //*!contact heading
+    // ?Fonts sizes
+    --fs-1: 36px; //*h1 (salam ...)
+    --fs-2: 30px; //*h2 (article title)
+    --fs-3: 27px; //*h3 (section title), contact heading
+    --fs-4: 17px; //*h4 (Bachelor's Degree...)
+    --fs-5: 14px; //*p
+    --fs-6: 13px; //*h5 (Faculté Polydisciplinaire, HTML, ...)
 }
 
+// ?Light Mode
 [data-theme="light"] {
-    // Light Colors
+    // ?Colors
     --background-body: #{$background-body-light};
     --background-primary: #{$background-primary-light};
     --background-secondary: #{$background-secondary-light};
@@ -39,8 +36,12 @@
     --accent-color: #{$accent-color-light};
     --text-primary: #{$text-primary-light};
     --text-secondary: #{$text-secondary-light};
+    --text-tertiary: #{$text-tertiary-light};
     --border-color: #{$border-color-light};
     --shadow-color: #{$shadow-color-light};
+
+    // ?Gradients
+    --brd-gradient: linear-gradient(to bottom right, var(--border-color) 0%, var(--background-secondary) 50%);
 }
 
 
@@ -59,7 +60,5 @@
         --fs-4: 18px;
         --fs-5: 15px;
         --fs-6: 14px;
-
-        --fs-8: 30px;
     }
 }

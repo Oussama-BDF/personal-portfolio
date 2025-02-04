@@ -9,6 +9,7 @@
         display: inline-block;
         min-width: 100px;
         color: var(--accent-color);
+        font-weight: 500;
     }
 }
 
@@ -25,6 +26,10 @@
     width: 100%;
     max-width: 768px;
     margin-inline: auto;
+}
+
+.skills-list {
+    justify-content: center;
 }
 
 .skill-item {
@@ -45,9 +50,7 @@
 }
 
 @include media-query($small-screen) {
-    .skill-item {
-        .icon-box {
-            font-size: 40px;
-        }
+    .skill-item .icon-box {
+        font-size: 40px;
     }
 }

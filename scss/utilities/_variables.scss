@@ -1,4 +1,4 @@
-// Dark Colors
+// ?Dark Colors
 $background-primary-dark: #1e1e1f;
 $background-body-dark: darken($background-primary-dark, 5%);
 $background-secondary-dark: lighten($background-primary-dark, 1.5%);
@@ -10,24 +10,23 @@ $text-tertiary-dark: #939393;
 $border-color-dark: lighten($background-primary-dark, 10%);
 $shadow-color-dark: #ffffff4d;
 
-// Light Colors
+// #475569
+
+// ?Light Colors
 $background-primary-light: #ffffff;
 $background-body-light: darken($background-primary-light, 5%);
-$background-secondary-light: lighten($background-primary-light, 3%);
-$background-tertiary-light: lighten($background-primary-light, 6%);
-$accent-color-light: #a978ed;
-$text-primary-light: #333333;
-$text-secondary-light: #000;
-$border-color-light: darken($background-primary-light, 10%);
+$background-secondary-light: darken($background-primary-light, 3%);
+$background-tertiary-light: darken($background-primary-light, 7%);
+$accent-color-light: #8D4AE9;
+$text-primary-light: #1e1e1f;
+$text-secondary-light: #333;
+$text-tertiary-light: #666;
+$border-color-light: darken($background-primary-light, 30%);
 $shadow-color-light: #0000009e;
 
-// Breakpoints
+// ?Breakpoints
 $xxsmall-screen: 579px;
 $xsmall-screen: 580px;
 $small-screen: 768px;
 $medium-screen: 992px;
 $large-screen: 1200px;
-
-$brd-gradient: linear-gradient(to bottom right, #{$border-color-dark} 0%, transparent 50%);
-$brd-gradient-hover: linear-gradient(to bottom right, #{$accent-color-dark} 0%, transparent 50%);
-$bg-gradient-hover: linear-gradient(135deg, rgba($accent-color-dark, 0.25) 0%, transparent 59.86%), var(--background-secondary-dark);
